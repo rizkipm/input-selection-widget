@@ -7,6 +7,7 @@ class DetailRegister extends StatefulWidget {
 
   //constructor
   DetailRegister({this.nUser, this.nEmail, this.nPassword});
+//  DetailRegister(this.nPassword);
 
   @override
   _DetailRegisterState createState() => _DetailRegisterState();
@@ -28,8 +29,29 @@ class _DetailRegisterState extends State<DetailRegister> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Detail Register'),
+        backgroundColor: Colors.pink,
+      ),
 
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            Container(
+              child: Text('Hello, ${widget.nUser}', style: TextStyle(fontSize: 16.0),),
+            ),
+
+            Container(
+              child: Text('Your Email, ${widget.nEmail}', style: TextStyle(fontSize: 16.0),),
+            ),
+
+            Container(
+              child: Text('Your Password, ${widget.nPassword}', style: TextStyle(fontSize: 16.0),),
+            )
+          ],
+        ),
+      ),
     );
   }
 }

@@ -82,7 +82,7 @@ class _PageRegisterState extends State<PageRegister> {
               //TASK : print semua data dari text field
               print("Data : " + etUsername.text + " Email : "+ etEmail.text + " Pass : " + etPassword.text);
 
-              FocusScope.of(context).requestFocus(nodeTwo);
+//              FocusScope.of(context).requestFocus(nodeTwo);
               //tampilkan ke dialog
               //TASK Tampilkan ketiga datanya ke dalam alert dialof
 //              return showDialog(context: context,
