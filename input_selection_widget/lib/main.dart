@@ -30,7 +30,26 @@ class PageHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
+        title: Text('Page Home'),
+        backgroundColor: Colors.pinkAccent,
+      ),
+
+      body: Column(
+        children: <Widget>[
+          
+          Container(
+            //retrieve value
+            margin: EdgeInsets.only(top: 35.0),
+            child: RaisedButton(
+              color: Colors.pinkAccent,
+              textColor: Colors.white,
+              child: Text('Input Widget Simple'),
+              onPressed: (){
+
+              },
+            ),
+          )
+        ],
       ),
     );
   }
