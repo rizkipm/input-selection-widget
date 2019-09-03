@@ -3,6 +3,7 @@ import 'page/simple_input.dart';
 import 'page/page_register.dart';
 import 'page/basic_listview.dart';
 import 'page/list_horizontal.dart';
+import 'page/simple_grid.dart';
 
 void main() => runApp(MyApp());
 
@@ -98,6 +99,33 @@ class PageHome extends StatelessWidget {
               },
             ),
           ),
+
+          Container(
+            //retrieve value
+            margin: EdgeInsets.only(top: 35.0),
+            child: RaisedButton(
+              color: Colors.pinkAccent,
+              textColor: Colors.white,
+              child: Text('Simple Grid'),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>SimpleGridView()));
+              },
+            ),
+          ),
+
+          Container(
+            //retrieve value
+            margin: EdgeInsets.only(top: 35.0),
+            child: RaisedButton(
+              color: Colors.pinkAccent,
+              textColor: Colors.white,
+              child: Text('Custom Gridview'),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>ListHorizonal()));
+              },
+            ),
+          ),
+
         ],
       ),
     );
