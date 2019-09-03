@@ -39,6 +39,8 @@ class _PageSimpleInputState extends State<PageSimpleInput> {
 
               print("Data Input : " + etUsername.text);
 
+              //TASK : Tampilan teks input nya ke toast
+
             },child: Text('Submit'),
           )
         ],
