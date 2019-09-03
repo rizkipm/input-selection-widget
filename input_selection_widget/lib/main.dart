@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'page/simple_input.dart';
 import 'page/page_register.dart';
 import 'page/basic_listview.dart';
+import 'page/list_horizontal.dart';
 
 void main() => runApp(MyApp());
 
@@ -81,6 +82,19 @@ class PageHome extends StatelessWidget {
               child: Text('Basic Listview'),
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>BasicListView()));
+              },
+            ),
+          ),
+
+          Container(
+            //retrieve value
+            margin: EdgeInsets.only(top: 35.0),
+            child: RaisedButton(
+              color: Colors.pinkAccent,
+              textColor: Colors.white,
+              child: Text('List Horizontal'),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>ListHorizonal()));
               },
             ),
           ),
