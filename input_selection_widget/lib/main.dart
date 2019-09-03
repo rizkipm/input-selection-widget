@@ -4,6 +4,7 @@ import 'page/page_register.dart';
 import 'page/basic_listview.dart';
 import 'page/list_horizontal.dart';
 import 'page/simple_grid.dart';
+import 'page/custom_grid.dart';
 
 void main() => runApp(MyApp());
 
@@ -121,7 +122,7 @@ class PageHome extends StatelessWidget {
               textColor: Colors.white,
               child: Text('Custom Gridview'),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>ListHorizonal()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>CustomGriView()));
               },
             ),
           ),
