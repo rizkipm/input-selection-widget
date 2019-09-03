@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'detail_register.dart';
 
 class PageRegister extends StatefulWidget {
   @override
@@ -84,13 +85,20 @@ class _PageRegisterState extends State<PageRegister> {
               FocusScope.of(context).requestFocus(nodeTwo);
               //tampilkan ke dialog
               //TASK Tampilkan ketiga datanya ke dalam alert dialof
-              return showDialog(context: context,
-                builder: (context){
-                  return AlertDialog(
-                    content: Text('Hi, ' + etUsername.text),
-                  );
-                }
-              );
+//              return showDialog(context: context,
+//                builder: (context){
+//                  return AlertDialog(
+//                    content: Text('Hi, ' + etUsername.text),
+//                  );
+//                }
+//              );
+
+            //passing value
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>DetailRegister(
+                nUser: etUsername.text,
+                nEmail: etEmail.text,
+                nPassword: etPassword.text,
+              )));
             },
           )
         ],
