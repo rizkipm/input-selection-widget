@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'page/simple_input.dart';
+import 'page/page_register.dart';
 
 void main() => runApp(MyApp());
 
@@ -64,7 +65,9 @@ class PageHome extends StatelessWidget {
               color: Colors.pinkAccent,
               textColor: Colors.white,
               child: Text('Form Register'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>PageRegister()));
+              },
             ),
           ),
         ],
