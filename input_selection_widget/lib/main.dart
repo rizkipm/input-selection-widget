@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'page/simple_input.dart';
 
 void main() => runApp(MyApp());
 
@@ -51,7 +52,9 @@ class PageHome extends StatelessWidget {
               color: Colors.pinkAccent,
               textColor: Colors.white,
               child: Text('Input Widget Simple'),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>PageSimpleInput()));
+              },
             ),
           ),
           Container(
