@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PageHome(),debugShowCheckedModeBanner: false,
+      home: PageHome(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -33,22 +34,36 @@ class PageHome extends StatelessWidget {
         title: Text('Page Home'),
         backgroundColor: Colors.pinkAccent,
       ),
-
       body: Column(
         children: <Widget>[
-          
+          Text(
+            'Day 2 Apps',
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 24.0,
+                color: Colors.pinkAccent),
+          ),
+          Container(
+            //retrieve value
+            alignment: Alignment.center,
+            margin: EdgeInsets.only(top: 35.0),
+            child: RaisedButton(
+              color: Colors.pinkAccent,
+              textColor: Colors.white,
+              child: Text('Input Widget Simple'),
+              onPressed: () {},
+            ),
+          ),
           Container(
             //retrieve value
             margin: EdgeInsets.only(top: 35.0),
             child: RaisedButton(
               color: Colors.pinkAccent,
               textColor: Colors.white,
-              child: Text('Input Widget Simple'),
-              onPressed: (){
-
-              },
+              child: Text('Form Register'),
+              onPressed: () {},
             ),
-          )
+          ),
         ],
       ),
     );
