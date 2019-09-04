@@ -13,12 +13,12 @@ class _CustomGriViewState extends State<CustomGriView> {
 
   var itemDaftarWisata = [
 
-    {"nama" : "Wisata 1", "gambar" : "satu.jpg"},
-    {"nama" : "Wisata 2", "gambar" : "dua.jpg"},
-    {"nama" : "Wisata 3", "gambar" : "tiga.jpg"},
-    {"nama" : "Wisata 4", "gambar" : "empat.jpg"},
-    {"nama" : "Wisata 5", "gambar" : "lima.jpeg"},
-    {"nama" : "Wisata 6", "gambar" : "enam.jpg"}
+    {"nama" : "Wisata 1", "gambar" : "satu.jpg", "keterangan":"Keterangan Foto 1"},
+    {"nama" : "Wisata 2", "gambar" : "dua.jpg", "keterangan":"Keterangan Foto 2"},
+    {"nama" : "Wisata 3", "gambar" : "tiga.jpg", "keterangan":"Keterangan Foto 3"},
+    {"nama" : "Wisata 4", "gambar" : "empat.jpg", "keterangan":"Keterangan Foto 4"},
+    {"nama" : "Wisata 5", "gambar" : "lima.jpeg", "keterangan":"Keterangan Foto 5"},
+    {"nama" : "Wisata 6", "gambar" : "enam.jpg", "keterangan":"Keterangan Foto 6"}
   ];
 
   _buatDataList() async{
